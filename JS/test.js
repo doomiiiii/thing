@@ -1,11 +1,11 @@
 function highlight(){
     document.getElementById("demo").style.color = "red";
 };
-document.body.onload = addElement;
 
 function addElement() {
   // create a new div element
-  const newDiv = document.createElement("div");
+  var newDiv = document.createElement("div"); 
+  newDiv.classList.add("testclass");
 
   // and give it some content
   const newContent = document.createTextNode("boob");
